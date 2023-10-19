@@ -1,1 +1,64 @@
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Roboto" sans-serif}.center{padding-left:calc(50vw - 555px);padding-right:calc(50vw - 555px)}.nav__list{padding-left:0;margin:0}.nav__item{list-style:none}.nav__link{color:red;font-size:24px}.nav__link:before{content:"- - -"}.nav__link_active{color:green}/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat" sans-serif;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald" sans-serif;
+}
+
+.center {
+  padding-left: calc(50vw - 555px);
+  padding-right: calc(50vw - 555px);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/static/Montserrat-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/static/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat/static/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(../font/Oswald/static/Oswald-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=style.css.map */

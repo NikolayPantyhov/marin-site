@@ -69,3 +69,26 @@
         opacity: .5;
     }
 }
+
+.form__btn_0 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 60px 0;
+}
+
+.form__btn {
+    width: 250px;
+    border: none;
+    background: #2D5E5E;
+    border-radius: 10px;
+    padding: 8px 42px;
+    white-space: nowrap;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.33;
+}

@@ -1,0 +1,43 @@
+.form {
+    &__general {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        padding: 60px 0 50px 0;
+    }
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__input {
+        width: 369px;
+        height: 40px;
+        padding: 8px 178px 8px 20px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__information_1 {
+        width: 372px;
+        height: 180px;
+        border-radius: 10px;
+        border: 1px solid #000;
+    }
+    &__checkbox {
+        text-align: center;
+        padding: 40px 0;
+        color: #2D5E5E;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.5;
+    }
+}

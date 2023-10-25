@@ -1,10 +1,4 @@
 .form {
-    &__general {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -13,31 +7,34 @@
         padding: 60px 0 50px 0;
     }
     &__information {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 369px 372px;
+        grid-template-rows: 1fr 1fr 1fr;
         gap: 30px;
+        justify-content: center;
     }
     &__input {
-        width: 369px;
-        height: 40px;
         padding: 8px 178px 8px 20px;
-        border-radius: 10px;
-        border: 1px solid #000;
-        font-size: 18px;
-        font-weight: 400;
     }
-    &__information_1 {
-        width: 372px;
-        height: 180px;
+    &__input_1 {
+        grid-row: 1/4;
+        grid-column: 2/3;
+        padding: 8px 243px 148px 20px;
+        line-height: 1.33;
+    }
+    &__input, &__input_1 {
         border-radius: 10px;
         border: 1px solid #000;
+    }
+    &__input::placeholder, &__input_1::placeholder {
+        color: black;
     }
     &__checkbox {
         text-align: center;
-        padding: 40px 0;
+        padding: 40px;
         color: #2D5E5E;
-        font-weight: 500;
         font-size: 12px;
+        font-weight: 500;
         line-height: 2.5;
     }
 }

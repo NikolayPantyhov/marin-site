@@ -1,11 +1,10 @@
 .btn {
-    text-transform: uppercase;
-    border: none;
     background: #2D5E5E;
     border-radius: 10px;
-    padding: 8px 42px;
+    padding: 6px 42px;
     white-space: nowrap;
     display: inline-flex;
+    min-width: 250px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -13,6 +12,18 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 1.33;
+    border: 3px solid transparent;
+    
+
+    &_bordered {
+        border-color: #2D5E5E;
+        background: transparent;
+
+        &:hover {
+            background: #2D5E5E;
+        }
+    }
+    
     &:hover,
     &:focus {
         opacity: .7;
@@ -20,55 +31,10 @@
     &:active {
         opacity: .4;
     }
+    
 }
 
-.about-me__btn {
-    margin-right: 30px;
-    min-width: 250px;
-    border: 3px solid #2D5E5E;
-    border-radius: 10px;
-    padding: 6px 42px;
-    white-space: nowrap;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 1.33;
-    &:hover,
-    &:focus {
-        background: #2D5E5E;
-    }
-    &:active {
-        opacity: .7;
-    }
-}
 
-.about-me__btn_1 {
-    max-width: 250px;
-    border: 3px solid transparent;
-    background: #2D5E5E;
-    border-radius: 10px;
-    padding: 6px 42px;
-    white-space: nowrap;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 1.33;
-    &:hover,
-    &:focus {
-        opacity: .8;
-    }
-    &:active {
-        opacity: .5;
-    }
-}
 
 .form__btn_0 {
     display: flex;
@@ -82,7 +48,7 @@
     border: none;
     background: #2D5E5E;
     border-radius: 10px;
-    padding: 8px 42px;
+    padding: 8px 42px !important; 
     white-space: nowrap;
     display: inline-flex;
     justify-content: center;

@@ -5,18 +5,49 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #a5a49f;
     color: #fff;
+
 
     &__title {
         max-width: 454px;
         font-size: 48px;
         line-height: 1.5;
         margin: 0 0 55px;
+        @media screen and (max-width: 1200px) {
+            font-size: 36px;
+            max-width: 360px;
+            margin-bottom: 36px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 30px;
+            text-wrap: balance;
+
+        }
     }
     &__desc {
         font-size: 24px;
         line-height: 1.5;
         max-width: 325px;
         margin: 0 0 55px;
+        @media screen and (max-width: 1200px) {
+            font-size: 18px;
+            margin-bottom: 36px;
+            text-wrap: balance;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+    @media screen and (max-width: 767px) {
+        background-image: none;
+    }
+
+    .btn {
+        text-transform: uppercase;
     }
 }

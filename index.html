@@ -22,6 +22,7 @@
         <img src="img/logo.svg" alt="logo" />
       </a>
       <nav class="nav">
+        <input type="checkbox" id="open_menu" class="visually-hidden" />
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link_active" href="#">Главная</a>
@@ -33,6 +34,7 @@
           <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
         </ul>
       </nav>
+      <label for="open_menu">MENU</label>
     </header>
 
     <main>
@@ -72,7 +74,6 @@
         </article>
       </section>
       <section class="center about-me">
-        <div class="about-me__article">
           <h2 class="about-me__title">Немного обо мне</h2>
           <p class="about-me__description">
             Далеко-далеко за словесными горами в стране гласных и согласных
@@ -82,31 +83,41 @@
             правилами. Эта парадигматическая страна, в которой жаренные члены
             предложения залетают прямо.
           </p>
-          <a href="#" class="about-me__btn">Задать вопрос</a>
-          <a href="#" class="about-me__btn_1">Хочу консультацию</a>
-        </div>
-        <div class="about-me__img">
-          <img src="img/about photo.jpg" alt="about" />
-        </div>
+          <div class="about-me__buttons">
+            <button class="btn btn_bordered">Задать вопрос</button>
+          <a href="#" class="btn">Хочу консультацию</a>
+          </div>
+          
+        <img src="img/about-photo.jpg" alt="about" class="about-me__img"/>
       </section>
-      <section class="center form">
+      <form class="center form">
         <h2 class="form__title">Записаться на прием</h2>
         <div class="form__information">
           <input type="text" class="form__input" placeholder="Ваше имя *" />
           <input type="text" class="form__input" placeholder="Ваш телефон *" />
-          <select class="form__input">
-            <option value="" disabled selected>Тема встречи *</option>
-          </select>
+          <label class="form__input-wrap form__input-wrap_select">
+            <select class="form__input">
+              <option value="" disabled selected>Тема встречи *</option>
+            </select>
+          </label>
+
           <input type="text" class="form__input_1" placeholder="Пожелания" />
         </div>
         <label class="form__checkbox">
-          <input type="checkbox" name="checkbox" value="test checkbox" class="visually-hidden"/>
-          <span class="form__checkbox-label">Я согласен с политикой конфиденциальности</span>
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="test checkbox"
+            class="visually-hidden"
+          />
+          <span class="form__checkbox-label"
+            >Я согласен с политикой конфиденциальности</span
+          >
         </label>
         <div class="form__btn_0">
-            <input class="form__btn" type="submit">
+          <input class="form__btn" type="submit" />
         </div>
-      </section>
+      </form>
     </main>
   </body>
 </html>

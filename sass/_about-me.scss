@@ -1,24 +1,44 @@
 .about-me {
     background-image: url(../img/Rectangle.jpg);
-    // background-size: cover;
-    // background-color: rgba(0,0,0,.7);
-    // background-blend-mode: overlay;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__title {
-        font-size: 36px;
-        color: white;
-        line-height: 1.5;
-        padding: 0 0 25px 0;
+    background-size: cover;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: overlay;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 494px;
+    grid-template-rows: auto 1fr auto;
+    gap: 35px 50px;
+
+    &__img {
+        grid-row: 1/4;
+        grid-column: 2/3;
+        @media screen and (max-width:1200px) {
+            grid-column: unset;
+            grid-row: 2/3;
+        }
     }
+    &__title,
     &__description {
-        color: white;
+        margin: 0;
         line-height: 1.5;
         font-weight: 700;
-        padding: 25px 0 35px 0;
     }
-    &__img {
-        padding: 60px 0 60px 50px;
+    &__title {
+        margin-bottom: 15px;
+        font-size: 36px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 30px;
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        grid-template-columns: 1fr;
     }
 }

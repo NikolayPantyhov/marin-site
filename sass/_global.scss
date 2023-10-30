@@ -15,12 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center {
-    padding-left: calc(50vw - 585px);
-    padding-right: calc(50vw - 585px);
+    padding-left: calc(50vw - 593px);
+    padding-right: calc(50vw - 593px);
 }
 
 a {
     outline: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 .visually-hidden {
@@ -35,4 +39,19 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
+
+@media screen and (max-width: 1200px) {
+    .center {
+        padding-left: calc(50vw - 360px);
+        padding-right: calc(50vw - 360px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .center {
+        padding-left: calc(50vw - 195px);
+        padding-right: calc(50vw - 195px);
+    }
+    
+}

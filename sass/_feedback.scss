@@ -1,0 +1,111 @@
+.feedback {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 70px 0;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1.5;
+        padding: 60px 0 50px 0;
+    }
+    &__article_0 {
+        display: grid;
+        grid-template-columns: 17px 1fr 17px;
+        gap: 43px;
+        align-items: center;
+    }
+
+    &__button_1 {
+        background-image: url(../img/Vector.svg);
+        width: 17px;
+        height: 31px;
+        cursor: pointer;
+    }
+
+    &__button_2 {
+        background-image: url(../img/Vector-1.svg);
+        width: 17px;
+        height: 31px;
+        cursor: pointer;
+    }
+
+    &__article {
+        width: 600px;
+        background: #ADDDDE;
+        @media screen and (max-width: 767px) {
+            width: 400px;
+        }
+    }
+    &__img {
+        border-radius: 50%;
+    }
+    &__article_1 {
+        display: grid;
+        grid-template-columns: 70px 142px;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding: 20px 0 30px 0;
+    }
+    &__user {
+        font-size: 18px;
+        color: #2d5e5e;
+        font-weight: 500;
+        line-height: 1.33;
+    }
+    &__desc {
+        padding: 0 25px 20px 25px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+
+
+// .feedback {
+//     margin: 0 0 70px 0;
+//     &__container {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+//     &__title {
+//         text-align: center;
+//         padding: 60px 0 50px 0;
+//         font-size: 48px;
+//         font-weight: 700;
+//         line-height: 1.5;
+//     }
+//     &__article {
+//         width: 600px;
+//         background: #adddde;
+        
+//     }
+//     &__article_1 {
+//         display: grid;
+//         grid-template-columns: 70px 142px;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 32px;
+//         padding: 20px 0 30px 0;
+//     }
+//     &__user_inform {
+//         font-size: 18px;
+//         color: #2d5e5e;
+//         font-weight: 500;
+//         line-height: 1.33;
+//     }
+//     &__user_desc {
+//         padding: 0 25px 20px 25px;
+//         font-weight: 300;
+//         line-height: 1.5;
+//         text-align: center;
+//     }
+//     &__img {
+//         border-radius: 50%;
+//     }
+// }

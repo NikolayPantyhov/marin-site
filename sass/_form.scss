@@ -63,6 +63,9 @@
         grid-column: 2/3;
         padding: 8px 243px 148px 20px;
         line-height: 1.33;
+        @media screen and (max-width: 767px) {
+            max-height: 36px;
+        }
     }
 
     select, input {

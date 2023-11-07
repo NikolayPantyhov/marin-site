@@ -1,0 +1,42 @@
+.statistic {
+    background-image: url(../img/counter-bg.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: overlay;
+    padding: 60px 0;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 90px;
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+    }
+    &__number, &__title, &__desc {
+        text-align: center;
+        color: #fff;
+    }
+    &__number {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.5;
+        padding-bottom: 14px;
+        font-family: 'Montserrat' sans-serif;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.33;
+        padding-bottom: 20px;
+    }
+    &__desc {
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    
+}

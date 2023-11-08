@@ -1,0 +1,41 @@
+.footer {
+    height: 190px;
+    background: #2D5E5E;
+    display: flex;
+        align-items: center;
+    &__icon {
+        color: #fff;
+    }
+    .logo img {
+        font-size: 0;
+        padding-right: 50px;
+    }
+    &__inform {
+        display: flex;
+        align-items: center;
+    }
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media screen and (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__icon {
+        padding-right: 10px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        padding-right: 30px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+    }
+}

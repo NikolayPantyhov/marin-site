@@ -14,24 +14,27 @@
     font-size: 18px;
     line-height: 1.33;
     border: 3px solid transparent;
+    font-family: Montserrat, sans-serif;
     
-
+    &:hover,
+    &:focus {
+        opacity: .7;
+        border-color: #2D5E5E;
+    }
+    &:active {
+        opacity: .4;
+    }
+    
     &_bordered {
         border-color: #2D5E5E;
-        background: transparent;
+        background: none;
 
         &:hover {
             background: #2D5E5E;
         }
     }
     
-    &:hover,
-    &:focus {
-        opacity: .7;
-    }
-    &:active {
-        opacity: .4;
-    }
+    
     
 }
 

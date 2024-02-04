@@ -18,14 +18,14 @@
         align-items: center;
     }
 
-    &__button_1 {
+    &__button_prev {
         background-image: url(../img/Vector.svg);
         width: 17px;
         height: 31px;
         cursor: pointer;
     }
 
-    &__button_2 {
+    &__button_next {
         background-image: url(../img/Vector-1.svg);
         width: 17px;
         height: 31px;
@@ -41,6 +41,7 @@
     }
     &__img {
         border-radius: 50%;
+        height: 70px;
     }
     &__article_1 {
         display: grid;

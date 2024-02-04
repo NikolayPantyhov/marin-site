@@ -1,45 +1,104 @@
 .nav {
-    &__list {
-        list-style: none;
-        display: flex;
-        gap: 15px;
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 
-        @media screen and (max-width: 767px) {
-            display: none;
-            position: absolute;
-            top: 100px;
-            left: 0;
-            width: 100%;
-            flex-direction: column;
-            justify-content: center;
-            background: white;
-            padding: 30px;
-
-        }
-    }
-
-    &__link {
-        text-decoration: none;
-        color: #85AAAB;
-        font-size: 18px;
-        font-weight: 700;
-        &_active {
-            color: #6DE1E3;
-            border-bottom: 2px solid currentColor;
-        }
-        
-        &:hover,
-        &:focus {
-            color: #63cdcf;
-        }
-        
-    }
     @media screen and (max-width: 767px) {
-        #open_menu:checked {
-        & ~ .nav__list {
-            display: flex;
-            flex-direction: column;
-            }
-        }
+      // opacity: 0;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      background: white;
+      padding: 30px;
+      transition: 0.3s;
+      translate: -100% 0;
+      // scale: .5;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #85aaab;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #63cdcf;
+        scale: 0 1;
+        transition: .3s;
+    }
+    &_active {
+      color: #6de1e3;
+    }
+
+    &:hover,
+    &:focus {
+      color: #63cdcf;
+      &:before {
+        scale: 1 1;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #open_menu:checked {
+      & ~ .nav__list {
+        translate: 0 0;
+      }
+      & ~ .nav__toggler {
+        span {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            top: 50%;
+            rotate: 225deg;
+          }
+          &:nth-child(2) {
+            rotate: -225deg;
+          }
+        }
+      }
+    }
+  }
+  &__toggler {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: 30px;
+      height: 15px;
+      position: relative;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #2d5e5e;
+        border-radius: 10px;
+        position: absolute;
+        translate: -50% -50%;
+        left: 50%;
+        transition: 0.5s;
+
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 50%;
+        }
+        &:nth-child(3) {
+          top: 100%;
+        }
+      }
+    }
+  }
 }

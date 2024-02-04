@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="" method="get"></form>
+<button id="button">start loading</button>
+    <script>
+        // let a = 5
+        // let timeout = setTimeout(() => {
+        //     a = 150
+        //     console.log(a)
+        // }, 1000)
+        // console.log(a)
+
+
+        let a = 5
+        let isLoading = false
+        let button = document.querySelector("#button")
+        button.onclick = async function () {
+            isLoading = true
+            console.log("start loading...")
+            let timeout = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    reject(a = 150)
+                }, 1000)
+            })
+
+
+            timeout
+                .then(() => {
+                    console.error('success')
+                }).catch(() => {
+                    console.error('error')
+                }).finally(() => {
+                    isLoading = false
+                })
+        }
+
+
+
+        console.log(a)
+
+    </script>
+</body>
+</html>

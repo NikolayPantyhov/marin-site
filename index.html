@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Marin Site</title>
+
     <link rel="stylesheet" href="../necolas.github.io_normalize.css_8.0.1_normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Oswald:wght@700&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/65e42fd3cb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header class="center header">
-      <a href="#" class="logo">
-        <img src="img/logo.svg" alt="logo" />
-      </a>
-      <nav class="nav">
-        <input type="checkbox" id="open_menu" class="visually-hidden" />
+<header class="center header">
+    <a href="#" class="logo">
+        <img src="img/logo.svg" alt="logo"/>
+    </a>
+    <nav class="nav">
+        <input type="checkbox" id="open_menu" class="visually-hidden"/>
         <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link_active" href="#">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Мероприятия</a>
-          </li>
-          <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+            <li class="nav__item">
+                <a class="nav__link nav__link_active" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">Мероприятия</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
         </ul>
-      </nav>
-      <label for="open_menu">MENU</label>
-    </header>
+    </nav>
+    <label class="nav__toggler" for="open_menu"><span></span><span></span><span></span></label>
+</header>
 
-    <main>
-      <section class="center offer">
+<main>
+    <section class="center offer">
         <h1 class="offer__title">Ваш личный психолог В Кривом Роге</h1>
         <p class="offer__desc">Личные, семейные и групповые консультаци</p>
         <a href="#" class="btn">Узнать больше</a>
-      </section>
-      <section class="services center">
+    </section>
+
+    <section class="services center">
         <article class="services__item">
-          <img class="services__icon" src="img/goal.svg" alt="goal" />
-          <h2 class="services__title">Личные консультации</h2>
-          <p class="services__decsription">
-            Достижения поставленных целей бывает сложной задачей, но при
-            правильной поддержке нет ничего не возможного
-          </p>
+            <img class="services__icon" src="img/goal.svg" alt="goal"/>
+            <h2 class="services__title">Личные консультации</h2>
+            <p class="services__decsription">
+                Достижения поставленных целей бывает сложной задачей, но при
+                правильной поддержке нет ничего не возможного
+            </p>
         </article>
         <article class="services__item">
-          <img
-            class="services__icon"
-            src="img/family-room.svg"
-            alt="family-room"
-          />
-          <h2 class="services__title">Семейная терапия</h2>
-          <p class="services__decsription">
-            У любой семьи бывают кризисные ситуации, поэтому в такие моменты
-            важно поддерживать друг друга
-          </p>
+            <img
+                    class="services__icon"
+                    src="img/family-room.svg"
+                    alt="family-room"
+            />
+            <h2 class="services__title">Семейная терапия</h2>
+            <p class="services__decsription">
+                У любой семьи бывают кризисные ситуации, поэтому в такие моменты
+                важно поддерживать друг друга
+            </p>
         </article>
         <article class="services__item">
-          <img class="services__icon" src="img/network.svg" alt="network" />
-          <h2 class="services__title">Сенситивные группы</h2>
-          <p class="services__decsription">
-            Групповые занятия — отличное место, чтобы научиться общаться с
-            окружающими людьми и раскрыть свой потенциал
-          </p>
+            <img class="services__icon" src="img/network.svg" alt="network"/>
+            <h2 class="services__title">Сенситивные группы</h2>
+            <p class="services__decsription">
+                Групповые занятия — отличное место, чтобы научиться общаться с
+                окружающими людьми и раскрыть свой потенциал
+            </p>
         </article>
-      </section>
-      <section class="center about-me">
-          <h2 class="about-me__title">Немного обо мне</h2>
-          <p class="about-me__description">
+    </section>
+
+    <section class="center about-me">
+        <h2 class="about-me__title">Немного обо мне</h2>
+        <p class="about-me__description">
             Далеко-далеко за словесными горами в стране гласных и согласных
             живут рыбные тексты. Вдали от всех живут они в буквенных домах на
             берегу Семантика большого языкового океана. Маленький ручеек Даль
             журчит по всей стране и обеспечивает ее всеми необходимыми
             правилами. Эта парадигматическая страна, в которой жаренные члены
             предложения залетают прямо.
-          </p>
-          <div class="about-me__buttons">
+        </p>
+        <div class="about-me__buttons">
             <button class="btn btn_bordered">Задать вопрос</button>
-          <a href="#" class="btn">Хочу консультацию</a>
-          </div>
-          
+            <a href="#" class="btn">Хочу консультацию</a>
+        </div>
+
         <img src="img/about-photo.jpg" alt="about" class="about-me__img"/>
-      </section>
-      <form class="center form">
+    </section>
+
+    <form class="center form">
         <h2 class="form__title">Записаться на прием</h2>
         <div class="form__information">
-          <input type="text" class="form__input" placeholder="Ваше имя *" />
-          <input type="text" class="form__input" placeholder="Ваш телефон *" />
-          <label class="form__input-wrap form__input-wrap_select">
-            <select class="form__input">
-              <option value="" disabled selected>Тема встречи *</option>
-            </select>
-          </label>
-          <input type="text" class="form__input_1" placeholder="Пожелания" />
+            <input type="text" class="form__input" placeholder="Ваше имя *"/>
+            <input type="text" class="form__input" placeholder="Ваш телефон *"/>
+            <label class="form__input-wrap form__input-wrap_select">
+                <select class="form__input">
+                    <option value="" disabled selected>Тема встречи *</option>
+                </select>
+            </label>
+            <input type="text" class="form__input_1" placeholder="Пожелания"/>
         </div>
         <label class="form__checkbox">
-          <input
-            type="checkbox"
-            name="checkbox"
-            value="test checkbox"
-            class="visually-hidden"
-          />
-          <span class="form__checkbox-label"
-            >Я согласен с политикой конфиденциальности</span
-          >
+            <input
+                    type="checkbox"
+                    name="checkbox"
+                    value="test checkbox"
+                    class="visually-hidden"
+            />
+            <span class="form__checkbox-label">Я согласен с политикой конфиденциальности</span>
         </label>
         <div class="form__btn_0">
-          <input class="form__btn" type="submit" />
+            <input class="form__btn btn" type="submit"/>
         </div>
-      </form>
+    </form>
 
-      <section class="statistic">
+    <section class="statistic">
         <div class="statistic__container center">
             <article class="statistic__item">
                 <p class="statistic__number">120 мин</p>
@@ -132,28 +135,78 @@
                 <p class="statistic__desc">Результат — улыбка на лице и ощущение счастья</p>
             </article>
         </div>
-      </section>
+    </section>
 
-      <section class="feedback center">
+    <section class="feedback center">
         <div class="feedback__container">
             <h2 class="feedback__title">
                 Отзывы клиентов
             </h2>
-            <div class="feedback__article_0">
-            <span class="feedback__button_1"></span>
-            <div class="feedback__article">
-                <div class="feedback__article_1">
-                    <img src="img/girl.jpg" alt="" class="feedback__img">
-                    <p class="feedback__user">Марина, 25 лет</p>
-                </div>
-                <p class="feedback__desc">Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо Валентину.</p>
-            </div>
-            <span class="feedback__button_2"></span>
-            </div>
-        </div>
-      </section>
 
-      <section class="last-article center">
+            <div class="slider-container">
+                <span class="feedback__button_prev"></span>
+                <div class="slider">
+                    <div class="slider-line">
+                        <div class="feedback__article">
+                            <div class="feedback__article_1">
+                                <img src="img/girl.jpg" alt="" class="feedback__img">
+                                <p class="feedback__user">Марина, 25 лет</p>
+                            </div>
+                            <p class="feedback__desc">Обратилась к Сергею, потому что нервы уже были на пределе.
+                                Ситуация
+                                казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как
+                                избавилась от огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь
+                                есть
+                                надежда... Большое спасибо Валентину.</p>
+                        </div>
+                        <div class="feedback__article">
+                            <div class="feedback__article_1">
+                                <img src="img/good_man.avif" alt="" class="feedback__img">
+                                <p class="feedback__user">Саша, 30 лет</p>
+                            </div>
+                            <p class="feedback__desc">Обратился к Сергею, потому что нервы уже были на пределе.
+                                Ситуация
+                                казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сам не заметил, как
+                                избавился от огромного кома. Наконец-то увидел выход из сложившейся ситуации и теперь
+                                есть
+                                надежда... Большое спасибо Валентину.</p>
+                        </div>
+                        <div class="feedback__article">
+                            <div class="feedback__article_1">
+                                <img src="img/beautiful_woman.avif" alt="" class="feedback__img">
+                                <p class="feedback__user">Оксана, 29 лет</p>
+                            </div>
+                            <p class="feedback__desc">Обратилась к Сергею, потому что нервы уже были на пределе.
+                                Ситуация
+                                казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сама не заметила, как
+                                избавилась от огромного кома. Наконец-то увидела выход из сложившейся ситуации и теперь
+                                есть
+                                надежда... Большое спасибо Валентину.</p>
+                        </div>
+                        <div class="feedback__article">
+                            <div class="feedback__article_1">
+                                <img src="img/handsome_man.avif" alt="" class="feedback__img">
+                                <p class="feedback__user">Андрей, 27 лет</p>
+                            </div>
+                            <p class="feedback__desc">Обратился к Сергею, потому что нервы уже были на пределе.
+                                Ситуация
+                                казалась мне безвыходной – несмотря на то, что я работаю и учусь. Сам не заметил, как
+                                избавился от огромного кома. Наконец-то увидел выход из сложившейся ситуации и теперь
+                                есть
+                                надежда... Большое спасибо Валентину.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <span class="feedback__button_next"></span>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <section class="last-article center">
         <h2 class="last-article__title">Последние статьи</h2>
         <div class="last-article__container">
             <article class="last-article__item">
@@ -169,9 +222,9 @@
                 <h4 class="last-article__desc">8 советов, как оставаться продуктивным и не сойти с ума</h4>
             </article>
         </div>
-      </section>
-      
-      <section class="question center">
+    </section>
+
+    <section class="question center">
         <h2 class="question__title">Частые вопросы</h2>
         <details class="faq">
             <summary class="faq__toggler">
@@ -180,7 +233,8 @@
             </summary>
             <div class="faq__content">
                 <img src="img/Group-28.svg" alt="">
-                <p class="faq__desc">Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00</p>
+                <p class="faq__desc">Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00.
+                    Записаться на прием можно в любой день с 9:00 до 21:00</p>
             </div>
         </details>
         <details class="faq">
@@ -213,10 +267,12 @@
                 <p class="faq__desc">Разговоры о важном</p>
             </div>
         </details>
-      </section>
+    </section>
 
-      <section class="map-inform">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.77215512142!2d29.584320708455987!3d45.39923573641879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b834bcbc70f68f%3A0xa4e410495d116680!2z0KHQstGP0YLQvi3QndC40LrQvtC70LDQtdCy0YHQutCw0Y8g0YPQuy4sINCS0LjQu9C60L7QstC-LCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2ODM1NQ!5e0!3m2!1sru!2sua!4v1699444624006!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-inform__map"></iframe>
+    <section class="map-inform">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.77215512142!2d29.584320708455987!3d45.39923573641879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b834bcbc70f68f%3A0xa4e410495d116680!2z0KHQstGP0YLQvi3QndC40LrQvtC70LDQtdCy0YHQutCw0Y8g0YPQuy4sINCS0LjQu9C60L7QstC-LCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2ODM1NQ!5e0!3m2!1sru!2sua!4v1699444624006!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="map-inform__map"></iframe>
         <article class="map-inform__contacts">
             <h2 class="map-inform__title">Контакты</h2>
             <p class="map-inform__desc"><a href="#" class="map-inform__link">Тел: +380 99 123 45 67</a></p>
@@ -224,42 +280,48 @@
             <p class="map-inform__desc"><a href="#" class="map-inform__link">Telegram: @phyholog_sergei</a></p>
             <p class="map-inform__desc"><a href="#" class="map-inform__link">Instagram: @phyholog_sergei</a></p>
             <p class="map-inform__desc"><a href="#" class="map-inform__link">E-mail: phyholog_sergei@gmail.com</a></p>
-            <p class="map-inform__desc"><a href="#" class="map-inform__link">Адрес: Ул. Центральная д. 10, офис 1</a></p>
+            <p class="map-inform__desc"><a href="#" class="map-inform__link">Адрес: Ул. Центральная д. 10, офис 1</a>
+            </p>
         </article>
-      </section>
+    </section>
 
-      <form class="entry center">
-        <h2 class="entry__title">Записаться со скидкой 50 грн</h2>
-            <div class="entry__inform">
-                <input type="text" class="entry__input" placeholder="Ваше имя *"/>
-                <input type="tel" class="entry__input" placeholder="Ваш телефон *"/>
-                <button class="btn">Записаться со скидкой</button>
-            </div>
-            <label class="form__checkbox">
-                <input
-                  type="checkbox"
-                  name="checkbox"
-                  value="test checkbox"
-                  class="visually-hidden"
-                />
-                <span class="form__checkbox-label"
-                  >Я согласен с политикой конфиденциальности</span
-                >
-              </label>
-      </form>
-    </main>
-    <footer class="footer center">
-        <div class="footer__inform">
-            <a href="#" class="logo">
-                <img src="img/logo.svg" alt="logo"/>
-            </a>
+    <form class="entry center">
+        <h2 class="entry__title">Записаться со скидкой <span id="counterNumber" data-value="50"> </span> грн</h2>
+        <div class="entry__inform">
+            <input type="text" class="entry__input" placeholder="Ваше имя *"/>
+            <input type="tel" class="entry__input" placeholder="Ваш телефон *"/>
+            <button class="btn">Записаться со скидкой</button>
+        </div>
+        <label class="form__checkbox">
+            <input
+                    type="checkbox"
+                    name="checkbox"
+                    value="test checkbox"
+                    class="visually-hidden"
+            />
+            <span class="form__checkbox-label"
+            >Я согласен с политикой конфиденциальности</span
+            >
+        </label>
+    </form>
+</main>
+<footer class="footer center">
+    <div class="footer__inform">
+        <a href="#" class="logo">
+            <img src="img/logo.svg" alt="logo"/>
+        </a>
         <div class="footer__icons">
             <a href="#" class="footer__link"><i class="fa-brands fa-instagram footer__icon"></i>@phyholog_sergei</a>
             <a href="#" class="footer__link"><i class="fa-brands fa-viber footer__icon"></i>+380 99 123 45 67</a>
             <a href="#" class="footer__link"><i class="fa-brands fa-telegram footer__icon"></i>@phyholog_sergei</a>
             <a href="#" class="footer__link"><i class="fa-solid fa-phone-volume footer__icon"></i>+380 99 123 45 67</a>
-            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+
+<script src="js/interval.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

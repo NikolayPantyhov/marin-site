@@ -1,0 +1,21 @@
+{
+  "name": "lesson-16",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "main.js",
+  "scripts": {
+    "dev": "gulp",
+    "prettier": "echo \" Prettier started \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikolay Pantyhov",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.70.0"
+  }
+}

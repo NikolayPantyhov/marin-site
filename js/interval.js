@@ -51,29 +51,28 @@
 // })
 
 
-let counterNumber = document.querySelector('#counterNumber')
-let isAnimated = false
-document.addEventListener('scroll', function () {
-    if(counterNumber.getBoundingClientRect().top < window.innerHeight * 0.75 && !isAnimated) {
-        isAnimated = true
-        startCount()
-    }
-})
 
-function startCount() {
-    let  currentValue = 0;
-    let max = +counterNumber.getAttribute('data-value')
-    console.log(currentValue, max)
-    let pace = 25
+let counterNumbers = document.querySelectorAll(".countedNumber");
+let isAnimated = new Array(counterNumbers.length).fill(false);
+
+document.addEventListener('scroll', function () {
+    counterNumbers.forEach(function (counterNumber, index) {
+        if(counterNumber.getBoundingClientRect().top < window.innerHeight * 0.9 && !isAnimated[index]) {
+            isAnimated[index] = true;
+            startCount(counterNumber);
+        }
+    });
+});
+
+function startCount(counterNumber) {
+    let currentValue = 0;
+    let max = +counterNumber.getAttribute('data-value');
 
     let interval = setInterval(() => {
-        if (pace >= max *.75) {
-            pace = 10
-        }
         if (currentValue >= max) {
-            clearInterval(interval)
+            clearInterval(interval);
         }
-        counterNumber.innerText = currentValue
-        currentValue++
-    }, pace)
+        counterNumber.innerText = currentValue;
+        currentValue++;
+    }, 1000 / max);
 }

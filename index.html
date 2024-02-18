@@ -39,7 +39,7 @@
     <section class="center offer">
         <h1 class="offer__title">Ваш личный психолог В Кривом Роге</h1>
         <p class="offer__desc">Личные, семейные и групповые консультаци</p>
-        <a href="#" class="btn">Узнать больше</a>
+        <a href="#" class="btn" id="showModal">Узнать больше</a>
     </section>
 
     <section class="services center">
@@ -120,17 +120,17 @@
     <section class="statistic">
         <div class="statistic__container center">
             <article class="statistic__item">
-                <p class="statistic__number">120 мин</p>
+                <p class="statistic__number"><span class="countedNumber" data-value="120">0</span> мин</p>
                 <p class="statistic__title">Время консультации</p>
                 <p class="statistic__desc">Оптимально для того, чтобы найти выход и сделать очередной шаг</p>
             </article>
             <article class="statistic__item">
-                <p class="statistic__number">от 200 грн</p>
+                <p class="statistic__number">от <span class="countedNumber" data-value="200">0</span> грн</p>
                 <p class="statistic__title">Стоимость</p>
                 <p class="statistic__desc">Цена доступна для любого человека, нуждающего в помощи</p>
             </article>
             <article class="statistic__item">
-                <p class="statistic__number">75+</p>
+                <p class="statistic__number"><span class="countedNumber" data-value="75">0</span>+</p>
                 <p class="statistic__title">Довольных клиентов</p>
                 <p class="statistic__desc">Результат — улыбка на лице и ощущение счастья</p>
             </article>
@@ -286,7 +286,7 @@
     </section>
 
     <form class="entry center">
-        <h2 class="entry__title">Записаться со скидкой <span id="counterNumber" data-value="50"> </span> грн</h2>
+        <h2 class="entry__title">Записаться со скидкой <span class="countedNumber" data-value="50">0</span> грн</h2>
         <div class="entry__inform">
             <input type="text" class="entry__input" placeholder="Ваше имя *"/>
             <input type="tel" class="entry__input" placeholder="Ваш телефон *"/>
@@ -305,6 +305,29 @@
         </label>
     </form>
 </main>
+
+<dialog class="modal">
+    <div class="modal__content">
+        <div class="modal__icon">
+            <svg width="75" height="75" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 57" id="Layer_57">
+                <path class="cls-1" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/>
+                <path class="cls-2" d="M16,24a2,2,0,1,1,2-2A2,2,0,0,1,16,24Zm0-2Z"/>
+                <path class="cls-3" d="M16,18a1,1,0,0,1-1-1V8a1,1,0,0,1,2,0v9A1,1,0,0,1,16,18Z"/></g></svg>
+        </div>
+        <div class="modal__text">
+            <h6>
+                Lorem ipsum
+            </h6>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eius.
+            </p>
+            <button class="btn" id="closeModal">
+                Close
+            </button>
+        </div>
+    </div>
+</dialog>
+
 <footer class="footer center">
     <div class="footer__inform">
         <a href="#" class="logo">
@@ -322,6 +345,7 @@
 
 <script src="js/interval.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 </html>
